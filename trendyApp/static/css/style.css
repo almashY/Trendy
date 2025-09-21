@@ -2,11 +2,11 @@
 /* header */
 header {
   background-color: #0099FF;
-}
-
-.header-3 {
-  box-sizing: border-box;
+  position: fixed;
+  top: 0px;
+  left: 0px;
   width: 100%;
+  z-index: 10;
 }
 
 .header-inner {
@@ -65,10 +65,6 @@ header {
   }
 }
 
-main {
-    margin: 15px;
-}
-
 body {
     background-color: #f5f5f5;
     margin: 0;
@@ -80,6 +76,10 @@ li {
 
 ul {
     padding-inline-start: 0;
+}
+
+.ranking-section {
+  padding: 80px 16px 0 16px;
 }
 
 .ranking {
