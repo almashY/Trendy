@@ -1,0 +1,19 @@
+{% extends "common/layout.html" %}
+
+{% block title %}Steamランキング{% endblock %}
+
+{% block content %}
+<h1>Steam ランキング TOP10</h1>
+<ul class="ranking">
+    {% for game in games %}
+    <li>
+        <h2>{{ loop.index }}位: {{ game.title }}</h2>
+        <img src="{{ game.image }}" alt="{{ game.name }}" width="200">
+        <p>{{ game.description }}</p>
+        <p>AppId: {{ game.appids }}</p>
+        <p>今週の最大プレイヤー人数: {{ game.players }}</p>
+        <p>現在のプレイヤー人数: {{ game.current_players }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Flaskアプリ{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+        <div class="logo">
+            Trendy
+        </div>
+        <nav class="header-nav">
+            <div class="header-nav-item">
+                <a class="header-button header-post">新規投稿</a>
+            </div>
+            <div class="header-nav-item">
+                <a class="header-button header-login">ログイン</a>
+            </div>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Flask App</p>
+  </footer>
+</body>
+</html>

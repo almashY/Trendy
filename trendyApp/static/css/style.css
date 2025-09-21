@@ -1,0 +1,97 @@
+
+/* header */
+header {
+  background-color: #0099FF;
+}
+
+.header-3 {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 0.8em;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.logo {
+    color: white;
+    font-size: 30px;
+    width: 70px;
+    font-weight: bold;
+}
+
+.header-button {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0.5em 1.2em;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.header-login {
+  color: white;
+}
+
+.header-post {
+  font-weight: bold;
+  color: #fff;
+  background: #00b5ad;
+  border: 1px #00b5ad solid;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .header-post {
+    display: none;
+  }
+}
+
+main {
+    margin: 15px;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+li {
+  list-style-type: none; /* 点を消す */
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.ranking {
+    margin: auto;
+}
+
+.ranking li {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 15px 30px;
+    margin: 20px 50px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    background-color: #fff;
+}
+
