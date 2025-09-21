@@ -1,0 +1,39 @@
+
+
+.ranking-container{
+  text-align: center;
+  justify-content: center;
+}
+.ranking-container p{
+  font-size: 16px;
+  margin: 10px 0 42px;
+}
+.ranking-title{
+  font-size: 32px;
+  font-weight: normal;
+}
+.ranking-button{
+  font-size: 18px;
+  background-color: #ff838b;
+  color: #fff;
+  border-radius: 5px;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+#home{
+  background-image: url(img/sea.jpg);
+  background-color: #f6f5f4;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+#home .ranking-title{
+  text-transform: none;
+}
+.main-section{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

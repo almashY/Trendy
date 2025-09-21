@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>{% block title %}Flaskアプリ{% endblock %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  {# ページごとに追加したい head 情報を差し込める #}
+  {% block head %}{% endblock %}
 </head>
 <body>
   <header>
@@ -16,7 +18,7 @@
                 <a class="header-button header-post">新規投稿</a>
             </div>
             <div class="header-nav-item">
-                <a class="header-button header-login">ログイン</a>
+                <a class="header-button header-login" href="/">ホームへ</a>
             </div>
         </nav>
     </div>

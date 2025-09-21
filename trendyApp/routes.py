@@ -3,6 +3,11 @@ from flask import render_template
 from trendyApp.services.steam_api import get_top_appids,get_app_detail
 
 @app.route('/')
+def index():
+    return render_template("index.html")
+
+
+@app.route('/ranking')
 def ranking():
     limit = 10
 

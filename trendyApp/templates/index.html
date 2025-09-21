@@ -1,0 +1,20 @@
+{% extends "common/layout.html" %}
+
+{% block title %}Steamランキング{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_home.css') }}">
+{% endblock %}
+
+{% block content %}
+<div id="home">
+    <div class="main-section">
+        <div class="ranking-container">
+            <h2 class="ranking-title">ランキング表示</h2>
+            <p class="ranking-description">HTMLレイアウト</p>
+            <a class="ranking-button" href="/ranking">ランキング表示</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
