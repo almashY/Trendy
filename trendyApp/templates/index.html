@@ -15,6 +15,22 @@
             <a class="ranking-button" href="/ranking">ランキング表示</a>
         </div>
     </div>
+    <div class="second-section">
+        <h2 class="second-section-title">ジャンルを選んでください</h2>
+        <form class="genre_form" action="/select_genre" method="POST">
+            <label for="genre">ジャンル:</label>
+            <select name="genre" id="genre">
+                <option value="アクション">アクション</option>
+                <option value="RPG">RPG</option>
+                <option value="アドベンチャー">アドベンチャー</option>
+                <option value="ストラテジー">ストラテジー</option>
+                <option value="無料">無料</option>
+            </select>
+            <div class="button-wrapper">
+                <button type="submit">決定</button>
+            </div>
+        </form>
+    </div>
 </div>
 
 {% endblock %}

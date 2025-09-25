@@ -33,8 +33,35 @@
   text-transform: none;
 }
 .main-section{
-  height: 100vh;
+  height: 50vh;
+  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+
+/* second-section */
+.second-section{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ranking-container{
+  text-align: center;
+  justify-content: center;
+  height: auto;
+  position: relative;
+}
+
+.genre_form {
+    text-emphasis: left;
+}
+
+.button-wrapper {
+    text-align: center;
+    margin-top: 30px;
 }
